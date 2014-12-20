@@ -26,7 +26,7 @@ def sendEmail(ip):
 def main():
 	curIP = ipgetter.myip()
 
-	recIPfilename = "/etc/ipmonitor/current_ip"
+	recIPfilename = "/etc/ipmonitor/recorded_ip"
 
 	if not os.path.isfile(recIPfilename):
 		recIPfile = open(recIPfilename, "w")

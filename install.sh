@@ -15,7 +15,7 @@ read emailList
 arr=$(echo $emailList | tr "," "\n")
 
 sudo mkdir /etc/ipmonitor
-sudo touch /etc/ipmonitor/current_ip
+sudo touch /etc/ipmonitor/recorded_ip
 
 for email in $arr
 do
