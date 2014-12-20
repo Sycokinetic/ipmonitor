@@ -23,6 +23,12 @@ the list of emails, type them in and separate each with only a comma and no
 spaces. If one does not exist, it will then create a cron job that will run
 every ten minutes.
 
+== Installation ==
+To use the install script, have install.sh and ipmonitor.py in the same
+directory. Make install.sh executable and run it with "./install.sh". You
+will need to use your password for sudo, but do not run as "sudo ./install.sh"
+because this breaks setting up the cron job.
+
 == Default File Locations ==
 /usr/bin/ipmonitor.py
 /etc/ipmonitor/email_list
