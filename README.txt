@@ -17,7 +17,7 @@ notifications to. Each email is on its own line.
 recorded_ip is a plain text file storing the last known external IP.
 
 install.sh is the bash installation script. It will prompt you for the
-location to copy ipmonitor.py to, installing to /usr/bin/ by default.
+location to copy ipmonitor.py to, installing to /var/run/ by default.
 email_list and recored_ip will be created in /etc/ipmonitor/. To enter
 the list of emails, type them in and separate each with only a comma and no
 spaces. If one does not exist, it will then create a cron job that will run
@@ -30,7 +30,7 @@ will need to use your password for sudo, but do not run as "sudo ./install.sh"
 because this breaks setting up the cron job.
 
 == Default File Locations ==
-/usr/bin/ipmonitor.py
+/var/run/ipmonitor.py
 /etc/ipmonitor/email_list
 /etc/ipmonitor/recorded_ip
 

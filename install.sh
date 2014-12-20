@@ -1,11 +1,11 @@
 managerFile="ipmonitor.py"
 
-printf "Enter installation location for ipmonitor.py (default: /usr/bin/): "
+printf "Enter installation location for ipmonitor.py (default: /var/run/): "
 read managerTarget
 
 if [ -z $managerTarget ]
 then
-	managerTarget="/usr/bin/"
+	managerTarget="/var/run/"
 fi
 sudo cp $managerFile $managerTarget
 
